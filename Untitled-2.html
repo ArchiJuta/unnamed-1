@@ -1,6 +1,6 @@
 <HTML>
     <head>
-    <title>123</title>
+    <title>1 2 3</title>
     <style>
     .header{
     padding:10px;
@@ -11,28 +11,97 @@
     z-index:997;
     background:palevioletred;
     }
-    .menu-nav_item{
-    list-style=none;
-    }
+
     body{background:rgb(241, 241, 241)}
+    }
+    .menu-nav_item{
+    list-style:none;
+    }
+    .menu-nav_link{
+    text-decoration:none;
+    display:inline-block;
+    color:rgb(6, 20, 20);
+    font-weight:400;
+    font-size:12px;
+    text-transform:uppercase;
+    outline:none;       
+    }
+    .section_banner{
+        background:url(pic/banner-bg.jpg);
+        background-size:cover;
+    }
+    .container{
+        max-width:1140px;
+        padding:0 15px;
+        margin:0 auto;
+    }
+    .banner{
+        margin-top:120px;
+        padding:120px 0;
+    }
+    .banner-text_header{
+        color:white;
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .banner-text_body{
+        text-align:center;
+        padding:10px;
+    }
+    .banner-text_body a{
+        text-decoration:none;
+        color:white;
+        font-weight:300;
+        font-size:14px;
+    }
+    .banner-text_body span{
+        color:white;
+        font-weight:300;
+        font-size:14px;
+        padding:0 5 px
+    }
+    *{
+        padding:0;
+        margin:0;
     }
     </style>
     </head>
-    
+
 <body>
 <header class="header">
-<div class="container">
-<div class="menu">
-<div class="menu-logo"><a href="#" class="menu-logo_link"><img src="pic/logo.png"></a></div>
-<div class="menu-nav-container"><div class="container">
-<ul class="menu-nav">
-<H2><li class="menu-nav_item"><a href="#" class="menu-nav_link">H O M E</a></li></H2>
-<H2><li class="menu-nav_item"><a href="#" class="menu-nav_link">A B O U T</a></li></H2>
-</ul>
-</div>
-</div>
-</div>
-</header> 
-      
- </body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-logo"><a href="#" class="menu-logo_link"><img src="pic/logo.png"></a>
+            </div>
+            <div class="menu-nav-container">
+                <div class="container">
+                    <ul class="menu-nav">
+                        <li class="menu-nav_item"><a href="#" class="menu-nav_link">H O M E</a></li>
+                        <li class="menu-nav_item"><a href="#" class="menu-nav_link">A B O U T</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="section section_banner">
+        <div class="container">
+            <div class="banner-container">
+                <div class="banner">
+                    <div class="banner-text">
+                        <h1 class="banner-text_header">P R O D U C T S</h1>
+                        <div class="banner-text_body">
+                            <a href="#">H O M E</a>
+                            <span>-></span>
+                            <a href="#">P R O D U C T S</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>    
+</body>
 </HTML>
