@@ -1,51 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
     <meta charset="UTF-8">
-    <title>Products</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/product-card.css">
-    <link rel="stylesheet" href="css/brand.css">
-    <link rel="stylesheet" href="css/footer.css">
-    </head>
+    <link rel="stylesheet" href="css/hdr.css">
+    <link rel="stylesheet" href="css/footr.css">
+    <title>G O R</title>
     
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            $("#list").slideUp(0)
+            $("#menu").click(function(){ $("#list").slideToggle(500)});
+        });                         
+    </script> 
+    
+    <style type="text/css">
+    #menu
+    {
+    border:1px solid black; 
+    color:white;
+    width:178px;
+    padding:6px;
+    margin:0px;
+    background-color:#000000;
+    font-size:1.1em;
+    }
+    #list
+    {
+    border-bottom:4px solid;
+    width:400px;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    font-size:1.1em;
+    }
+    #list li
+    {
+    color:yellow;
+    padding:20px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(109, 109, 109);
+    border-width:5px;
+    background-color:#0c0c0c;
+    }
+    #img
+    {
+    margin:0px;
+    }
+    </style>                  
+</head>
+    <style>
+    body{
+        background: rgb(70, 70, 70);
+    }
+    </style>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="menu">
-                <div class="menu-logo">
-                    <a href="#" class="menu-logo__link">
-                        <img src="img/logo.png">
-                    </a>
-                </div>
-                <div class="menu-nav-container">
-                    <div class="container">
-                        <ul class="menu-nav">
-                            <li class="menu-nav__item">
-                                <a href="#" class="menu-nav__link">home</a>
-                            </li>
-                            <li class="menu-nav__item">
-                                    <a href="#" class="menu-nav__link">about us</a>
-                                </li>
-                                <li class="menu-nav__item">
-                                    <a href="#" class="menu-nav__link">services</a>
-                                </li>
-                                <li class="menu-nav__item">
-                                    <a href="#" class="menu-nav__link">products</a>
-                                </li>
-                                <li class="menu-nav__item">
-                                    <a href="#" class="menu-nav__link">blog</a>
-                                </li>
-                                <li class="menu-nav__item">
-                                    <a href="#" class="menu-nav__link">contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <li class="menu-nav__item">
+            <a id="menu" href="#" class="menu-nav__link">М Е Н Ю</a>
+    </header>
+    <br>
+    <br>
+    <br>
+    </li>
+    <ul id="list">
+    <li>0</li>
+    <li><h1 align=center>1</h1></li>
+    <li><h1 align=center>2</h1></li>
+    <li><h1 align=center>3</h1></li>
+    <li><h1 align=center>4</h1></li>
+    </ul>    
+    <footer class="footer">
+        
+    </footer>
 </body>
 </html>
