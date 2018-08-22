@@ -2,8 +2,7 @@
 <html >
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/hdr.css">
-    <link rel="stylesheet" href="css/footr.css">
+
     <title>G O R</title>
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
@@ -18,9 +17,11 @@
     <style>
         .card{
             padding:20px;
+            background: #222222;
+            z-index:2;
         }
         .card-body{
-            color:red;
+            color:rgb(214, 214, 26);
         }
     </style> 
     
@@ -37,6 +38,7 @@
     }
     #list
     {
+
     border-bottom:4px solid;
     width:400px;
     list-style-type:none;
@@ -51,7 +53,8 @@
     border-bottom-style:solid;
     border-bottom-color:rgb(109, 109, 109);
     border-width:5px;
-    background-color:#0c0c0c;
+    background-color:#1d1d1d;
+
     }
     #img
     {
@@ -72,6 +75,20 @@
         color:rgb(214, 214, 26);
         text-decoration: none;
     }
+    .footer {
+    background: rgb(126, 125, 125);
+    width:100%;
+ 
+    }
+    .header {
+    padding: 50px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 997;
+    background: rgb(0, 0, 0);
+    }
 
     </style>
 <body>
@@ -80,58 +97,93 @@
             <a id="menu" href="#" class="menu-nav__link">М Е Н Ю</a>
     </header>
 
-    </li>
-    <ul id="list">
-    <li>0</li>
-    <li><h1 align=center><a href="pg1.html">1</a></h1></li>
-    <li><h1 align=center>2</h1></li>
-    <li><h1 align=center>3</h1></li>
-    <li><h1 align=center>4</h1></li>
-    </ul>    
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-block">
-                <div class="footer-column footer-column_left">
-                    <h6 class="footer-column__header">Top Products</h6>
-                    <div class="footer-column__body">
-                        <ul class="footer-group-link">
-                            <li class="footer-group-link__item">
-                                <a href="#" class="footer-group-link__link">О себе</a>
-                            </li>
-                            <li class="footer-group-link__item">
-                                <a href="#" class="footer-group-link__link">Контакты</a>
-                            </li>
-                            <li class="footer-group-link__item">
-                                <a href="#" class="footer-group-link__link"></a>
-                            </li>
-                            <li class="footer-group-link__item">
-                                <a href="#" class="footer-group-link__link"></a>
-                            </li>
-                            <li class="footer-group-link__item">
-                                <a href="#" class="footer-group-link__link"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-column footer-column_center">
-                    <h6 class="footer-column__header">Newsletter</h6>
-                    <div class="footer-column__body">
-                        <p>You can trust us. we only send promo offers, not a single spam.</p>
-                        <div class="footer-search">
-                            <div class="footer-search__item footer-search__item_input">
-                                <input type="text" class="footer-search-input">
-                            </div>
-                            <div class="footer-search__item footer-search__item_button">
-                                <button class="footer-search-button">Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <br><br><br><br><br>
 
+
+    
+    <ul id="list">
+    
+    <li><h3 align=center><a href="pg1.html">ВЕЛОСИПЕДЫ</a></h3></li>
+    <li><h3 align=center>РАМЫ</h3></li>
+    <li><h3 align=center>КОЛЕСА</h3></li>
+    <li><h3 align=center>ПЕРЕКЛЮЧАТЕЛИ</h3></li>
+    <li><h3 align=center>МАНЕТКИ</h3></li>
+    <li><h3 align=center>ШАТУНЫ</h3></li>
+    </ul> 
+   
+    <main class="main">
+        <div class="row">
+            <div class="col-sm-12 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="pic/Zycle Fix MISTY BLUE.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Zycle Fix MISTY BLUE</h5>
+                        <p class="card-text">*какая-то инфа*</p>
+                        <a href="article.html" class="btn btn-danger">15 000</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-block footer-block_last ">
-                <div class="copyright">Copyright ©2018 All rights reserved By .....</div>
+            <div class="col-sm-12 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="pic/strt shsse.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">ХВЗ Старт Шоссе</h5>
+                        <p>*какая-то инфа*</p>
+                        <a href="article.html" class="btn btn-danger">7 000</a>
+                    </div>
+                </div>
             </div>
+            <div class="col-sm-12 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="pic/Outleap GREENWICH.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Outleap GREENWICH</h5>
+                        <p class="card-text">*какая-то инфа*</p>
+                        <a href="article.html" class="btn btn-danger">10 000</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="pic/hvz_tahion.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">ХВЗ Тахион</h5>
+                        <p class="card-text">*какая-то инфа*</p>
+                        <a href="article.html" class="btn btn-danger">15 000</a>
+                    </div>
+                </div>
+            </div>
+                     
+
+    </main>
+    
+    <footer class="footer">
+        <div>
+            <ul class="footer-group-link">
+                <li>
+                    <a href="#">О себе</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <input type="text">
+        </div>
+        <div>
+            <button class="footer-search-button">Search</button>
+        </div>
+        <div class="copyright">Copyright ©2018 All rights reserved By .....</div>
         </div>
     </footer>
 </body>
