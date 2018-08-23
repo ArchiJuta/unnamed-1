@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+
+    <title>Манетки</title>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            $("#list").slideUp(0)
+            $("#menu").click(function(){ $("#list").slideToggle(500)});
+        });                         
+    </script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <style>
+        .card{
+            padding:20px;
+            background: #222222;
+            z-index:2;
+        }
+        .card-body{
+            color:rgb(214, 214, 26);
+        }
+    </style> 
+    
+    <style type="text/css">
+    #menu
+    {
+    border:1px solid black; 
+    color:white;
+    width:178px;
+    padding:6px;
+    margin:0px;
+    background-color:#000000;
+    font-size:1.1em;
+    }
+    #list
+    {
+
+    border-bottom:4px solid;
+    width:400px;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    font-size:1.1em;
+    }
+    #list li
+    {
+    color:rgb(214, 214, 26);
+    padding:20px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(109, 109, 109);
+    border-width:5px;
+    background-color:#1d1d1d;
+
+    }
+    #img
+    {
+    margin:0px;
+    }
+    </style>                  
+</head>
+    <style>
+    body{
+        background: rgb(70, 70, 70);
+    }
+    a{
+        color:rgb(214, 214, 26);
+        text-decoration: none;
+
+    }
+    a:hover {
+        color:rgb(214, 214, 26);
+        text-decoration: none;
+    }
+    .footer {
+    background: rgb(126, 125, 125);
+    width:100%;
+ 
+    }
+    .header {
+    padding: 50px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 997;
+    background: rgb(0, 0, 0);
+    }
+
+    </style>
+<body>
+    <header class="header">
+        <li class="menu-nav__item">
+            <a id="menu" href="#" class="menu-nav__link">М Е Н Ю</a>
+    </header>
+
+    <br><br><br><br><br>
+  
+    <ul id="list">
+    
+    <li><h3 align=center><a href="index.html">ВЕЛОСИПЕДЫ</a></h3></li>
+    <li><h3 align=center><a href="frames.html">РАМЫ</h3></li>
+    <li><h3 align=center><a href="wheels.html">КОЛЕСА</h3></li>
+    <li><h3 align=center><a href="tires.html">РЕЗИНА</h3></li>
+    <li><h3 align=center><a href="manetki.html">МАНЕТКИ</h3></li>
+    <li><h3 align=center><a href="brakes.html">ТОРМОЗА</h3></li>
+    </ul> 
+    
+    <main class="main">
+        <div class="row">
+            <div class="col-sm-12 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="pic/shmn105 5800.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Shimano 105 5800</h5>
+			<p>C-Brake</p>
+			<p>Цена за шт.:</p>
+                        <a class="btn btn-danger">3 000</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="pic/shmn brr451.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Shimano BR-R451</h5>
+                        <p>C-Brake</p>
+			<p>Цена за шт.:</p>
+                        <a class="btn btn-danger">1 200</a>
+                    </div>
+                </div>
+            </div>
+            
+    </main>
+    
+    <footer class="footer">
+        <div>
+            <ul class="footer-group-link">
+                <li>
+                    <a href="about.html">О себе и контакты</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="copyright">Copyright ©2018 All rights reserved By .....</div>
+        </div>
+    </footer>
+</body>
+</html>
